@@ -12,6 +12,13 @@ This Project was a part of Modern application developement course(MAD-1) of IIT 
 2. Bootstrap
 3. Html and Css
 4. SQLite for Data storage 
+
+# To Run the Application 
+**Install All the Dependencies:-**
 <br/>
-<br/>
+1. Flask
+2. Flask-SQLAlchemy==2.5.1
+3. Flask-login
+4. Flask-restful
+
 
