@@ -1,0 +1,33 @@
+{% extends 'main.html' %}
+{% block title %}
+<title>home</title>
+{% endblock title %}
+{% block body %}
+<h1 class="text-center">Register Page</h1>
+<form class="my-4" method="POST" action='/register'>
+    <div class="form-row">
+      <div class="form-group col-md-6">
+        <label for="inputEmail4">Email</label>
+        <input type="email" class="form-control" id="inputEmail4" placeholder="Email" name="email">
+      </div>
+      <div class="form-group col-md-6">
+        <label for="inputPassword4">Password</label>
+        <input type="password" class="form-control" id="inputPassword4" placeholder="Password" name="password">
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="inputAddress">First Name</label>
+      <input type="text" class="form-control" id="inputAddress" placeholder="First Name" name="fname">
+    </div>
+    <div class="form-group">
+      <label for="inputAddress2">Last Name</label>
+      <input type="text" class="form-control" id="inputAddress2" placeholder="Last Name" name="lname">
+    </div>
+    <div class="form-row">
+      <div class="form-group col-md-12">
+        <label for="inputCity">Username</label>
+        <input type="text" class="form-control" id="inputCity" placeholder="Username" name="uname">
+      </div>
+    <button type="submit" class="btn btn-primary">Sign in</button>
+  </form>
+{% endblock body %}

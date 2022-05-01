@@ -1,0 +1,63 @@
+.container {
+    position: relative;
+    text-align: center;
+    color: white;
+  }
+  
+  /* Bottom left text */
+  .bottom-left {
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+  }
+  
+  /* Top left text */
+  .top-left {
+    position: absolute;
+    top: 8px;
+    left: 16px;
+  }
+  
+  /* Top right text */
+  .top-right {
+    position: absolute;
+    top: 8px;
+    right: 16px;
+  }
+  
+  /* Bottom right text */
+  .bottom-right {
+    position: absolute;
+    bottom: 8px;
+    right: 16px;
+  }
+  
+  /* Centered text */
+  .centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .text-head{
+      font-size:40px;
+      color:yellow;
+  }
+  .date{
+      font-size:15px;
+  }
+  .ques{
+      margin-bottom: 100px;
+  }
+  .button-1{
+      height:30px;
+      width:80px;
+      background-color:rgb(0, 132, 255);
+      border-radius:5px;
+      border-width:0px;
+      color:white;
+  }
+.tt{
+    color:red;
+    font-size:15px;
+}

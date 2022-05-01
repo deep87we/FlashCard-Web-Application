@@ -1,0 +1,28 @@
+{% extends 'main.html' %}
+{% block title %}
+<title>home</title>
+{% endblock title %}
+{% block body %}
+{% with messages = get_flashed_messages(with_categories=true) %}
+  {% if messages %}
+    <ul class=flashes>
+    {% for category, message in messages %}
+    <div class="alert alert-{{category}} alert-dismissible fade show" role="alert">
+        <strong>Message:</strong> {{message}}
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+    {% endfor %}
+    </ul>
+  {% endif %}
+{% endwith %}
+<h1 class="text-center">Delete page</h1>
+<form method='POST' action='/delete' class="my-5">
+    <div class="form-group">
+      <label for="exampleInputEmail1"> Enter Card number that you want to delete !</label>
+      <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Username" name="del">
+    </div>
+    <button type="submit" class="btn btn-primary">Login</button>
+  </form>
+{% endblock body %}

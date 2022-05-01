@@ -1,0 +1,27 @@
+{% extends 'main.html' %}
+{% block title %}
+<title>home</title>
+{% endblock title %}
+{% block body %}
+<h1>Card Page</h1>
+<form method='POST' action='/card'>
+    <div class="form-group">
+      <label for="exampleFormControlInput1">Question</label>
+      <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="" name='title'>
+    </div>
+      <div class="form-group">
+        <label for="exampleFormControlSelect1">Difficulty</label>
+        <select class="form-control" id="exampleFormControlSelect1" name='author'>
+          <option>Easy</option>
+          <option>Medium</option>
+          <option>Tough</option>
+        </select>
+      </div>
+    
+    <div class="form-group">
+      <label for="exampleFormControlTextarea1">Answer</label>
+      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name='content'></textarea>
+    </div>
+    <input type='submit' value='POST' class='btn btn-primary'>
+  </form>
+{% endblock body %}
